@@ -26,4 +26,4 @@ plot3d(
   radius = .1,
   xlab="Total", ylab="Area(ha)", zlab="0.0,1 ha")
 
-writeWebGL( filename="HtmlWidget/3dscatter.html" ,  width=600, height=600)
+writeWebGL(filename="/Users/wemigliari/Documents/R/R_Scripts/Rmarkdown/para_desmatamento/images/para_propriedades.html" ,  width=600, height=600)
