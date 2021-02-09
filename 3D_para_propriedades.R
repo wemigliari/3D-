@@ -106,7 +106,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_3_4/60, color = 
     ))
 
 ## Area 4-5 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_4_5/60, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_4_5/50, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_4_5, z = data$num_unid_4_5, color = ~factor(data$State), showlegend = T)%>%
   layout(
