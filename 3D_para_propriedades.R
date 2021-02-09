@@ -40,8 +40,8 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_01_02, color = I
       camera = list(eye = list(x = 2, y = 2, z = 2))
     ))
 
-## Area 0.1-0.2 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_02_05, color = I(data$color),
+## Area 0.2-0.5 ha
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_02_05/10, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_02_05, z = data$num_unid_02_05, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -54,7 +54,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_02_05, color = I
     ))
 
 ## Area 0.5-1 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_05_1, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_05_1/20, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_05_1, z = data$num_unid_05_1, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -67,7 +67,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_05_1, color = I(
     ))
 
 ## Area 1-2 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_01_02, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_1_2/60, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_1_2, z = data$num_unid_1_2, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -80,7 +80,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_01_02, color = I
     ))
 
 ## Area 2-3 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_2_3, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_2_3/60, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_2_3, z = data$num_unid_2_3, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -93,7 +93,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_2_3, color = I(d
     ))
 
 ## Area 3-4 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_3_4, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_3_4/60, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_3_4, z = data$num_unid_3_4, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -106,7 +106,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_3_4, color = I(d
     ))
 
 ## Area 4-5 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_4_5, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_4_5/60, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_4_5, z = data$num_unid_4_5, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -120,7 +120,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_4_5, color = I(d
 
 
 ## Area 5-10 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_5_10, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_5_10/150, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_5_10, z = data$num_unid_5_10, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -133,7 +133,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_5_10, color = I(
     ))
 
 ## Area 10-20 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_10_20, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_10_20/250, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_10_20, z = data$num_unid_10_20, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -147,7 +147,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_10_20, color = I
 
 
 ## Area 20-50 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_20_50, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_20_50/3000, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_20_50, z = data$num_unid_20_50, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -160,7 +160,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_20_50, color = I
     ))
 
 ## Area 50-100 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_50_100, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_50_100/3000, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_50_100, z = data$num_unid_50_100, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -173,7 +173,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_50_100, color = 
     ))
 
 ## Area 100-200 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_100_200, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_100_200/3000, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_100_200, z = data$num_unid_100_200, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -186,7 +186,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_100_200, color =
     ))
 
 ## Area 200-500 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_200_500, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_200_500/4000, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_100_200, z = data$num_unid_200_500, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -199,7 +199,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_200_500, color =
     ))
 
 ## Area 500-1000 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_500_mil, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_500_mil/4000, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_500_mil, z = data$num_unid_500_mil, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -212,7 +212,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_500_mil, color =
     ))
 
 ## Area 1000 a 2000 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_mil_dois, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_mil_dois/6000, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_mil_dois, z = data$num_unid_mil_dois, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -225,7 +225,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_mil_dois, color 
     ))
 
 ## Area 2,500 up to 10,000 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_dois_mil_meio_10, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_dois_mil_meio_10/10000, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_dois_mil_meio_10, z = data$num_unid_dois_mil_meio_10, color = ~factor(data$State), showlegend = T)%>%
   layout(
@@ -238,7 +238,7 @@ plot_ly(data, marker = list(symbol = 'circle', size = data$area_dois_mil_meio_10
     ))
 
 ## Area + 10,000 ha
-plot_ly(data, marker = list(symbol = 'circle', size = data$area_10_mil_mais, color = I(data$color),
+plot_ly(data, marker = list(symbol = 'circle', size = data$area_10_mil_mais/10000, color = I(data$color),
                             line = list(width = 1, color = 'black'), opacity=0.5)) %>%
   add_markers(x = data$area_hec, y = data$area_10_mil_mais, z = data$num_unid_10_mil_mais, color = ~factor(data$State), showlegend = T)%>%
   layout(
