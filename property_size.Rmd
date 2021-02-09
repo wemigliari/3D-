@@ -74,6 +74,7 @@ Universidade Federal do Oeste do Pará\
 ## {.tabset}
 
 ### Land Use & Small Properties
+
 ```{r, echo = FALSE, warning=FALSE, comment=FALSE, message=FALSE, fig.width=10}
 
 ## Area 0-0.1 ha
